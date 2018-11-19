@@ -42,7 +42,7 @@ figure {
 main {
   grid-area: content;
   /* increasing the height of one element increases all row heights */
-  min-height: 6em;
+  /*height: 25vh;*/
   background: lightgreen;
 }
 footer {
@@ -55,7 +55,9 @@ footer {
 @media screen and (min-width: 600px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    /*or set the rows to 'view height (vh)'*/
+    grid-template-rows: 10vh 10vh 70vh 10vh;
     grid-template-areas:
       "figure header header"
       "intro intro menu"
