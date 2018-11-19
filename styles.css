@@ -14,13 +14,13 @@ body > * {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, 1fr);
-  /* grid-gap: 6px; */
+  /*grid-gap: 6px; */
   grid-template-areas:
-    "header header"
-    "intro figure"
+    "header  header"
+    "intro   figure"
     "content content"
-    "footer footer"
-    "menu menu";
+    "footer  footer"
+    "menu    menu";
 }
 header {
   grid-area: header;
@@ -59,9 +59,9 @@ footer {
     /*or set the rows to 'view height (vh)'*/
     grid-template-rows: 10vh 10vh 70vh 10vh;
     grid-template-areas:
-      "figure header header"
-      "intro intro menu"
+      "figure  header  header"
+      "intro   intro   menu"
       "content content menu"
-      "footer footer footer";
+      "footer  footer  footer";
   }
 }
